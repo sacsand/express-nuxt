@@ -62,7 +62,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: "http://api:8080"
+    baseURL: "http://18.163.120.161:8080"
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
