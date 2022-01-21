@@ -110,6 +110,8 @@ exports.postRefreshToken = async (req, res, next) => {
     console.log(err);
   }
 };
+
+
 exports.getUser = async (req, res, next) => {
   res.status(200).json({
     user: {
@@ -120,9 +122,12 @@ exports.getUser = async (req, res, next) => {
   });
 };
 
+
+
 exports.getAllUsers = async (req, res, next) => {
   const users = await User.findAll({
     attributes: ["id", "fullname", "email"],
   });
   res.status(200).json({ users: users });
-};
+};  
+ 
